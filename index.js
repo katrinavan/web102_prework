@@ -149,8 +149,10 @@ allBtn.     addEventListener("click", showAllGames);
  * Skills used: template literals, ternary operator
 */
 
-// grab the description container
 const descriptionContainer = document.getElementById("description-container");
+
+// get total number of games
+const totalGames = GAMES_JSON.length;
 
 // use filter or reduce to count the number of unfunded games
 const numUnfunded = GAMES_JSON.filter(game => game.pledged < game.goal).length;
@@ -159,11 +161,11 @@ const numUnfunded = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 const displayStr = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} games. ` +
   `Currently, ${numUnfunded} game${numUnfunded !== 1 ? "s" : ""} remain unfunded. We need your help to fund these amazing games!`;
 
-
-// create a new DOM element containing the template string and append it to the description container
+// create a new DOM element containing the template string and append it
 const p = document.createElement("p");
-p.innerHTML = displayStr;
+p.textContent = displayStr;
 descriptionContainer.appendChild(p);
+
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
