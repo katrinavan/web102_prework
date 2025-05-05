@@ -26,7 +26,7 @@ Here's a walkthrough of implemented features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+[GIF created with ... ](https://www.loom.com/share/55778bfd51db4be4a502c501ea701f44?sid=3bb729af-03d6-40d2-9341-138020bf95c2) 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -35,6 +35,8 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+Some challenges I faced were trying to open the website, but LiveShare heloed with that. 
 
 ## License
 
